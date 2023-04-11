@@ -4,11 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>IMC Calculator</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Hola</h1>
+    <header class="app-bar">
+        <h1>Adult BMI Calculator</h1>
+    </header>
+
+    <main class="app-main">
+        <form action="" method="post" class="my-form">
+            <label for="height-input">Height:</label>
+            <input type="text" id="height-input" placeholder="centimeters">
+
+            <label for="weight-input">Weight:</label>
+            <input type="text" id="weight-input" placeholder="kilograms">
+
+            <button class="calc-button">Calculate</button>
+<!--            TODO: Validate not empty input like in transform-time-stamps-proj, err message in portfolio-->
+            <span class="err-msg section-hide"></span>
+        </form>
+<!--        TODO: Show a whole result tab-->
+        <section class="calc-result section-hide"></section>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
